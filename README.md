@@ -19,7 +19,7 @@ National Neighborhood Data Archive (NaNDA) datasets use 2020 census geography. T
 3. Run the Stata script `use_ct_2022_2020_tract_crosswalk.do`, adjusting file paths as needed
 4. The script will merge the crosswalk with your NaNDA data and update Connecticut tract identifiers to 2022 boundaries
 
-The script adds a `tract_fips22` variable to the NaNDA dataset. **For analyses using data from 2022 or later thats include Connecticut, use `tract_fips22` instead of `tract_fips20`** to ensure correct geographic alignment with Census Bureau products.
+The script adds a `tract_fips22` variable to the NaNDA dataset. **For analyses using data from 2022 or later that includes Connecticut, use `tract_fips22` instead of `tract_fips20`** to ensure correct geographic alignment with Census Bureau products.
 
 ## Attribution
 
@@ -35,3 +35,4 @@ For questions about the crosswalk methodology, see the [original CT Data Collabo
 
 - [NaNDA homepage](https://nanda.isr.umich.edu/)
 - [NaNDA datasets on ICPSR](https://www.icpsr.umich.edu/sites/nanda/home)
+
