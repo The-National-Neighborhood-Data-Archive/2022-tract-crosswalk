@@ -24,7 +24,7 @@ The script adds a `tract_fips22` variable to the NaNDA dataset. **For analyses u
 ## Attribution
 
 **Crosswalk files created by:** [CT Data Collaborative](https://github.com/CT-Data-Collaborative/2022-tract-crosswalk)  
-**NaNDA application code by:** Robert Melendez, University of Michigan
+**NaNDA application code by:** Robert Melendez, University of Michigan. This resource is provided for public use in conjunction with NaNDA datasets. Please cite NaNDA datasets appropriately.
 
 ## Questions?
 
@@ -35,4 +35,5 @@ For questions about the crosswalk methodology, see the [original CT Data Collabo
 
 - [NaNDA homepage](https://nanda.isr.umich.edu/)
 - [NaNDA datasets on ICPSR](https://www.icpsr.umich.edu/sites/nanda/home)
+
 
