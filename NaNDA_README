@@ -1,0 +1,37 @@
+# Using the CT 2022 Tract Crosswalk with NaNDA Datasets
+
+## Background
+
+In 2022, the U.S. Census Bureau adopted Connecticut's nine planning regions as county equivalents, replacing the state's eight counties for statistical purposes. This change created new FIPS codes for Connecticut census tracts.
+
+National Neighborhood Data Archive (NaNDA) datasets use 2020 census geography. This repository provides tools to update NaNDA tract-level datasets to reflect Connecticut's 2022 geography boundaries.
+
+## What's Included
+
+- **Crosswalk files** (CSV, Stata, Excel formats): Links 879 Connecticut census tracts to towns, counties, county equivalents, ZIP codes, 2020 PUMAs, and secondary school districts
+- **Stata script** (`nanda_ct_2022_2020_tract_crosswalk.do`): Code for applying the crosswalk to NaNDA datasets
+- **Original documentation** (`CT_DATA_COLLABORATIVE_README.md`): Complete technical documentation from CT Data Collaborative
+
+## How to Use
+
+1. Download NaNDA 2020 tract-level dataset from [NaNDA's ICPSR Repository](https://www.icpsr.umich.edu/sites/nanda/home)
+2. Download the appropriate crosswalk file format (CSV, Stata .dta, or Excel)
+3. Run the Stata script `use_ct_2022_2020_tract_crosswalk.do`, adjusting file paths as needed
+4. The script will merge the crosswalk with your NaNDA data and update Connecticut tract identifiers to 2022 boundaries
+
+The script adds a `tract_fips22` variable to the NaNDA dataset. **For analyses using data from 2022 or later thats include Connecticut, use `tract_fips22` instead of `tract_fips20`** to ensure correct geographic alignment with Census Bureau products.
+
+## Attribution
+
+**Crosswalk files created by:** [CT Data Collaborative](https://github.com/CT-Data-Collaborative/2022-tract-crosswalk)  
+**NaNDA application code by:** Robert Melendez, University of Michigan
+
+## Questions?
+
+For questions about NaNDA datasets, contact nanda-info@umich.edu  
+For questions about the crosswalk methodology, see the [original CT Data Collaborative repository](https://github.com/CT-Data-Collaborative/2022-tract-crosswalk)
+
+## Related Resources
+
+- [NaNDA homepage](https://nanda.isr.umich.edu/)
+- [NaNDA datasets on ICPSR](https://www.icpsr.umich.edu/sites/nanda/home)
